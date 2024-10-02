@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Gaussiano {
     public static void main(String[] args) throws IOException {
 
-        String img = "src/ImagePath/ImagensComRuidos/Image5.png";
+        String img = "src/ImagePath/ImagensComRuidos/imagem1.png";
         BufferedImage image1 = ImageIO.read(new File(img));
         BufferedImage novaImagem = new BufferedImage(image1.getWidth(), image1.getHeight(), BufferedImage.TYPE_INT_RGB);
 
@@ -67,7 +67,7 @@ public class Gaussiano {
             }
         }
 
-        ImageIO.write(novaImagem,"png",new File("src/ImagePath/Resultados/Gaussiano/NOVAimagem5.png"));
+        ImageIO.write(novaImagem,"png",new File("src/ImagePath/Resultados/Gaussiano/NOVAimagem1.png"));
 
     }
 }

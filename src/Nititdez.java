@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Nititdez {
     public static void main(String[] args) throws IOException {
 
-        String img = "src/ImagePath/image5.jpg";
+        String img = "src/ImagePath/ImagensBorradas/image2.jpg";
         BufferedImage image1 = ImageIO.read(new File(img));
         BufferedImage novaImagem = new BufferedImage(image1.getWidth(), image1.getHeight(), BufferedImage.TYPE_INT_RGB);
 
@@ -64,7 +64,7 @@ public class Nititdez {
                 }
             }
 
-        ImageIO.write(novaImagem,"png",new File("src/ImagePath/Nitidez/NOVAimagem5.png"));
+        ImageIO.write(novaImagem,"png",new File("src/ImagePath/Resultados/Nitidez/NOVAimagem2.png"));
 
     }
 }
